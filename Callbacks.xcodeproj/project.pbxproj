@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A5C180982D4067B700C76E7A /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C180972D4067B700C76E7A /* BNRLogger.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A5C180892D40667500C76E7A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A5C1808B2D40667500C76E7A /* Callbacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Callbacks; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C180952D40667F00C76E7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A5C180962D4067B700C76E7A /* BNRLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
+		A5C180972D4067B700C76E7A /* BNRLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +51,8 @@
 		A5C180822D40667500C76E7A = {
 			isa = PBXGroup;
 			children = (
+				A5C180962D4067B700C76E7A /* BNRLogger.h */,
+				A5C180972D4067B700C76E7A /* BNRLogger.m */,
 				A5C180952D40667F00C76E7A /* README.md */,
 				A5C1808D2D40667500C76E7A /* Callbacks */,
 				A5C1808C2D40667500C76E7A /* Products */,
@@ -122,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C180982D4067B700C76E7A /* BNRLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
