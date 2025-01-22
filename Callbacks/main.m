@@ -12,6 +12,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BNRLogger *logger = [[BNRLogger alloc] init];
         
+        [[NSNotificationCenter defaultCenter] addObserver:logger
+                                                 selector:@selector(zoneChange:)
+                                                     name:NSSystemTimeZoneDidChangeNotification
+                                                   object:nil];
+        
         NSURL *url = [NSURL URLWithString:@"https://www.gutenberg.org/cache/epub/205/pg205.txt"];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         
@@ -20,10 +25,10 @@ int main(int argc, const char * argv[]) {
                                                                       startImmediately:YES];
         
         __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0
-                                                          target:logger
-                                                        selector:@selector(updateLastTime:)
-                                                        userInfo:nil
-                                                         repeats:YES];
+                                                                   target:logger
+                                                                 selector:@selector(updateLastTime:)
+                                                                 userInfo:nil
+                                                                  repeats:YES];
         
         [[NSRunLoop currentRunLoop] run];
     }

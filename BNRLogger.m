@@ -7,6 +7,12 @@
 
 #import "BNRLogger.h"
 
+@interface BNRLogger ()
+
+- (void)zoneChange:(NSNotification *)note;
+
+@end
+
 @implementation BNRLogger
 
 - (NSString *)lastTimeString
@@ -56,6 +62,11 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"connection failed: %@", [error localizedDescription]);
+}
+
+- (void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"The system time zone has changed!");
 }
 
 @end
