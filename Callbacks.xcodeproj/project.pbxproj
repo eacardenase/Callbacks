@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5C180982D4067B700C76E7A /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C180972D4067B700C76E7A /* BNRLogger.m */; };
+		A5FB24192D4701A000058234 /* BNRObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB24182D4701A000058234 /* BNRObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		A5C180952D40667F00C76E7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A5C180962D4067B700C76E7A /* BNRLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
 		A5C180972D4067B700C76E7A /* BNRLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
+		A5FB24172D4701A000058234 /* BNRObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRObserver.h; sourceTree = "<group>"; };
+		A5FB24182D4701A000058234 /* BNRObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -51,6 +54,8 @@
 		A5C180822D40667500C76E7A = {
 			isa = PBXGroup;
 			children = (
+				A5FB24172D4701A000058234 /* BNRObserver.h */,
+				A5FB24182D4701A000058234 /* BNRObserver.m */,
 				A5C180962D4067B700C76E7A /* BNRLogger.h */,
 				A5C180972D4067B700C76E7A /* BNRLogger.m */,
 				A5C180952D40667F00C76E7A /* README.md */,
@@ -130,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FB24192D4701A000058234 /* BNRObserver.m in Sources */,
 				A5C180982D4067B700C76E7A /* BNRLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
