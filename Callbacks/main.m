@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
         __unused BNRObserver *observer = [[BNRObserver alloc] init];
         
         [logger addObserver:observer
-                 forKeyPath:@"lastTime"
+                 forKeyPath:@"lastTimeString"
                     options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
                     context:nil];
         

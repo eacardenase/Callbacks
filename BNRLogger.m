@@ -73,4 +73,9 @@
     NSLog(@"The system time zone has changed!");
 }
 
++ (NSSet *)keyPathsForValuesAffectingLastTimeString
+{
+    return [NSSet setWithObject:@"lastTime"];
+}
+
 @end
